@@ -25,6 +25,11 @@ class ViewController: UIViewController ,UIViewControllerTransitioningDelegate, U
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
         cell.textLabel?.text = songs[indexPath.row]
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.whiteColor()//blueColor()
+            cell.selectedBackgroundView = backgroundView
+
+      
 return cell
     }
 
@@ -33,11 +38,9 @@ return cell
     {
         
         let VC = self.storyboard?.instantiateViewControllerWithIdentifier("songViewController") as! songViewController
-        //VC.title = songs[indexPath.row]
-        VC.nameOfSelectedSong = songs[indexPath.row]
+                VC.nameOfSelectedSong = songs[indexPath.row]
         VC.nameOfSelectedImage = images[indexPath.row]
- //let lenght = self.viewControllers.count
-     //if condition nh chal rai
+ 
         if (self.navigationController?.topViewController!.isEqual(songViewController) != nil)
         {            print("already")
             showViewController(VC, sender: nil)
@@ -52,10 +55,15 @@ return cell
     {
         navigationController?.delegate = self
         super.viewDidLoad()
-    }
+      
+            }
     
     func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         customNavigationAnimationController.reverse = operation == .Pop
         return customNavigationAnimationController
     }
+    func position(for bar: UIBarPositioning) -> UIBarPosition{
+        return .Bottom
+    }
+
 }

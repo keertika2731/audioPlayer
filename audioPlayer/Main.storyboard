@@ -23,17 +23,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="136" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f3g-Q2-WF0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="dTi-zy-UkT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f3g-Q2-WF0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="136" id="AHj-31-Rnv">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="136"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="61" id="AHj-31-Rnv" colorLabel="IBBuiltInLabel-Green">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" tableViewCell="AHj-31-Rnv" id="I34-oO-t07">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -44,35 +50,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="f3g-Q2-WF0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="30K-aD-gTN"/>
-                            <constraint firstItem="f3g-Q2-WF0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9t1-i2-7v6"/>
-                            <constraint firstAttribute="trailing" secondItem="f3g-Q2-WF0" secondAttribute="trailing" id="AX8-PW-oPr"/>
-                            <constraint firstAttribute="trailing" secondItem="f3g-Q2-WF0" secondAttribute="trailing" id="Ao9-Ig-P4W"/>
-                            <constraint firstItem="f3g-Q2-WF0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="DHg-ga-mE0"/>
-                            <constraint firstItem="f3g-Q2-WF0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FLS-Ac-sTb"/>
-                            <constraint firstItem="f3g-Q2-WF0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-67" id="Xmj-Ge-5UI"/>
-                            <constraint firstItem="f3g-Q2-WF0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aAf-hT-ncE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f3g-Q2-WF0" secondAttribute="bottom" id="3bK-tY-rJU"/>
+                            <constraint firstItem="f3g-Q2-WF0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="EPK-fT-sHE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f3g-Q2-WF0" secondAttribute="bottom" id="Gfg-tf-Z9Y"/>
+                            <constraint firstAttribute="trailing" secondItem="f3g-Q2-WF0" secondAttribute="trailing" id="Gzg-cR-BiP"/>
+                            <constraint firstItem="f3g-Q2-WF0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cLQ-f8-m7f"/>
+                            <constraint firstAttribute="trailing" secondItem="f3g-Q2-WF0" secondAttribute="trailing" id="lnn-a7-xn4"/>
+                            <constraint firstItem="f3g-Q2-WF0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sk6-ON-M0n"/>
+                            <constraint firstItem="f3g-Q2-WF0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y6H-bs-tBu"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="30K-aD-gTN"/>
-                                <exclude reference="Ao9-Ig-P4W"/>
-                                <exclude reference="Xmj-Ge-5UI"/>
-                                <exclude reference="aAf-hT-ncE"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="30K-aD-gTN"/>
-                                <exclude reference="9t1-i2-7v6"/>
-                                <exclude reference="AX8-PW-oPr"/>
-                                <include reference="Ao9-Ig-P4W"/>
-                                <exclude reference="DHg-ga-mE0"/>
-                                <exclude reference="FLS-Ac-sTb"/>
-                                <include reference="Xmj-Ge-5UI"/>
-                                <include reference="aAf-hT-ncE"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="QJ3-uK-Uj1"/>
                     <connections>
@@ -191,4 +177,7 @@
             <point key="canvasLocation" x="484" y="254"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backgroundImage.png" width="383" height="628"/>
+    </resources>
 </document>
