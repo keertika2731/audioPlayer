@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B12806921DCB8FE600231D98 /* Besabriyaan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B12806911DCB8FE600231D98 /* Besabriyaan.mp3 */; };
 		B12806941DCB8FF200231D98 /* ADHM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B12806931DCB8FF200231D98 /* ADHM.mp3 */; };
+		B14A82A01E2B5205009C17D6 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = B14A829F1E2B5205009C17D6 /* music.png */; };
 		B174D9DB1DCC7FC6008C75E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B174D9DA1DCC7FC6008C75E2 /* Main.storyboard */; };
 		B17977B71DC3CA6800A26CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17977B61DC3CA6800A26CEE /* AppDelegate.swift */; };
 		B17977B91DC3CA6800A26CEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17977B81DC3CA6800A26CEE /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		B12806911DCB8FE600231D98 /* Besabriyaan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Besabriyaan.mp3; sourceTree = "<group>"; };
 		B12806931DCB8FF200231D98 /* ADHM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ADHM.mp3; sourceTree = "<group>"; };
+		B14A829F1E2B5205009C17D6 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		B174D9DA1DCC7FC6008C75E2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B17977B31DC3CA6800A26CEE /* audioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17977B61DC3CA6800A26CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				B17977B81DC3CA6800A26CEE /* ViewController.swift */,
 				B17977BD1DC3CA6800A26CEE /* Assets.xcassets */,
 				B1E262721DCDE6B400AA9EC1 /* Besabriyaan.png */,
+				B14A829F1E2B5205009C17D6 /* music.png */,
 				B1E262701DCDDBAC00AA9EC1 /* ADHM.png */,
 				B12806931DCB8FF200231D98 /* ADHM.mp3 */,
 				B12806911DCB8FE600231D98 /* Besabriyaan.mp3 */,
@@ -252,6 +255,7 @@
 				B174D9DB1DCC7FC6008C75E2 /* Main.storyboard in Resources */,
 				B17977BE1DC3CA6800A26CEE /* Assets.xcassets in Resources */,
 				B1E262731DCDE6B400AA9EC1 /* Besabriyaan.png in Resources */,
+				B14A82A01E2B5205009C17D6 /* music.png in Resources */,
 				B12806941DCB8FF200231D98 /* ADHM.mp3 in Resources */,
 				B12806921DCB8FE600231D98 /* Besabriyaan.mp3 in Resources */,
 			);

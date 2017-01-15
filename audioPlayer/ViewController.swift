@@ -8,8 +8,9 @@
 
 import UIKit
 import AVFoundation
-class ViewController: UIViewController , UITableViewDelegate , UITableViewDataSource
+class ViewController: UIViewController ,UIViewControllerTransitioningDelegate, UINavigationControllerDelegate , UITableViewDelegate , UITableViewDataSource
 {
+    let customNavigationAnimationController = songViewController()
     var songs = ["ADHM", "Besabriyaan"]
     var images = ["ADHM", "Besabriyaan"]
     @IBOutlet weak var table: UITableView!
@@ -32,7 +33,7 @@ return cell
     {
         
         let VC = self.storyboard?.instantiateViewControllerWithIdentifier("songViewController") as! songViewController
-        VC.title = songs[indexPath.row]
+        //VC.title = songs[indexPath.row]
         VC.nameOfSelectedSong = songs[indexPath.row]
         VC.nameOfSelectedImage = images[indexPath.row]
  //let lenght = self.viewControllers.count
@@ -49,9 +50,12 @@ return cell
    
     override func viewDidLoad()
     {
-        
+        navigationController?.delegate = self
         super.viewDidLoad()
     }
     
-  
+    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        customNavigationAnimationController.reverse = operation == .Pop
+        return customNavigationAnimationController
+    }
 }
